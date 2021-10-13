@@ -6,7 +6,7 @@
 /*   By: junylee <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/28 17:10:27 by junylee           #+#    #+#             */
-/*   Updated: 2021/10/13 17:07:44 by junylee          ###   ########.fr       */
+/*   Updated: 2021/10/13 17:45:23 by junylee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -227,6 +227,7 @@ void	name_check(char *file)
 void	load_map(t_info *info, char *file)
 {
 	name_check(file);
+	(void)info;
 }
 
 void	check_map(t_info *info)
@@ -234,7 +235,7 @@ void	check_map(t_info *info)
 	(void)info;
 }
 
-void	init(t_info *info, char *file)a
+void	init(t_info *info, char *file)
 {
 	load_map(info, file);
 	check_map(info);
