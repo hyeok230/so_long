@@ -6,7 +6,7 @@
 #    By: junylee <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/28 17:04:14 by junylee           #+#    #+#              #
-#    Updated: 2021/10/13 16:37:43 by junylee          ###   ########.fr        #
+#    Updated: 2021/10/21 17:35:56 by junylee          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,10 +28,31 @@ D_M		= mandatory/
 D_B		= bonus/
 
 SRCS	= $(D_M)main.c\
+		  $(D_M)check_map.c\
+		  $(D_M)draw_player.c\
+		  $(D_M)get_next_line.c\
+		  $(D_M)move_player.c\
+		  $(D_M)draw_map.c\
+		  $(D_M)ft_itoa.c\
+		  $(D_M)load_map.c\
+		  $(D_M)move_check.c\
+		  $(D_M)put_images.c\
+		  $(D_M)utils.c\
 
 SRCS_B	= $(D_B)main_bonus.c\
 		  $(D_B)ft_itoa_bonus.c\
 		  $(D_B)put_images_bonus.c\
+		  $(D_B)get_next_line_bonus.c\
+		  $(D_B)draw_enemy_bonus.c\
+		  $(D_B)draw_player_bonus.c\
+		  $(D_B)draw_map_bonus.c\
+		  $(D_B)check_map_bonus.c\
+		  $(D_B)load_map_bonus.c\
+		  $(D_B)move_player_bonus.c\
+		  $(D_B)sprite2_bonus.c\
+		  $(D_B)sprite_bonus.c\
+		  $(D_B)move_check_bonus.c\
+		  $(D_B)utils_bonus.c\
 
 SOURCES =  $(addprefix $(FOLDER), $(SRCS))
 SOURCES_BONUS = $(addprefix $(FOLDER), $(SRCS_B))
