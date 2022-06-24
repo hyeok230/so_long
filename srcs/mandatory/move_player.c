@@ -33,6 +33,7 @@ void	move_player(t_info *info, int keycode)
 		info->map[info->player.y][info->player.x] = 'P';
 		(info->movement++);
 	}
+	printf("player movment: %d\n", info->movement);
 	draw_player(info, keycode);
 }
 
